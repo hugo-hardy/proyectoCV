@@ -1,0 +1,30 @@
+/* SECCION RESPONSIVE */
+@media screen and (max-width:800px){
+    
+    .about .contenido .fila{
+        display: block;
+    }
+    .about .contenido .fila .col{
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .experiencia .contenido .info{
+        display: block;
+    }
+    .experiencia .contenido .info .col{
+        width: 90%;
+        margin: auto;
+    }
+    .experiencia .contenido .info .col .titulo{
+        display: block;
+        text-align: center;
+    }
+    .experiencia .contenido .info .col table{
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    .contacto .contenido .fila{
+        display: block;
+    }
+}

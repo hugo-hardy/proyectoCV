@@ -1,5 +1,236 @@
-#foto{
-    height:"120px";
-    width: 100px;
-    border-radius: 25%;
+/* estilos generales */
+.titulo-seccion{
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    font-size: 3rem;
 }
+
+/* PRINCIPAL */
+.principal{    
+    background-size: cover;
+    background-position: center center;
+    
+}
+
+.principal .contenido{
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    padding: 0 10px;
+}
+.principal .contenido header{
+    padding: 30px;
+}
+/* menu lateral */
+.principal .contenido header nav{
+    position: fixed;
+    margin-left: 60px;
+    background-color: #000000;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+    z-index: 99;
+    display: none;
+}
+.principal .contenido header nav a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.principal .contenido header .nav-bar{
+    position: fixed;
+    background-color: #000000;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    cursor: pointer;
+    transition: .3s;
+    color: #fff;
+}
+.principal .contenido header .nav-bar:hover{
+    box-shadow: 0 0 35px #fff;
+}
+.principal .contenido .info{
+    padding-bottom: 130px;
+}
+.principal .contenido .info h1{
+    font-family:'Courier New', Courier, monospace; 
+    font-size: 3rem;
+    letter-spacing: 5px;
+}
+.principal .contenido .info h2{
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: -10px;
+    letter-spacing: 2px;
+}
+.principal .contenido .info .redes{
+    margin: 20px 0;
+}
+.principal .contenido .info .redes a{
+    display: inline-block;
+    text-decoration: none;
+    background-color: #000;
+    color: #940253;
+    border: 1px solid #940253;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 5px;
+    transition: .3s;
+}
+.principal .contenido .info .redes a:hover{
+    color: #fff;
+    background-color: #940253;
+    box-shadow: 0 0 20px #fff;
+}
+.principal .contenido .foto{
+    position: relative;
+}
+.principal .contenido .foto img{
+    max-width: 200px;
+    border-radius: 20%;
+    border: 5px solid #666;
+    position: absolute;
+    left: 50%;
+    top: -100px;
+    transform: translateX(-50%);
+}
+
+/* SECCION ABOUT */
+.about{
+    background-color: #e6e6e6;
+    padding: 140px 0 100px 0;
+    text-align: center;
+}
+.about .contenido{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.about .contenido h3{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.about .contenido .especial{
+    color: #940253;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.about .contenido p{
+    max-width: 700px;
+    margin: auto;
+    color: #666;
+}
+.about .contenido .fila{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+.about .contenido .fila .col{
+    width: 30%;
+}
+.about .contenido .fila .col i{
+    color: #940253;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #940253;
+    line-height: 40px;
+    border-radius: 50%;
+}
+.about .contenido .fila .col span{
+    display: block;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+/* EXPERIENCIA */
+.experiencia{
+    background-color: #dad7d7;
+    padding: 140px 0 100px 0;
+    text-align: center;
+}
+.experiencia .contenido{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.experiencia .contenido h3{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.experiencia .contenido .info{
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.experiencia .contenido .info .col{
+    width: 45%;
+}
+.experiencia .contenido .info .col .titulo{
+    display: inline-block;
+    color: #c302f3;
+    font-weight: bold;
+    border: 2px solid #c302f3;
+    padding: 10px;
+
+}
+.experiencia .contenido .info .col table{
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+.experiencia .contenido .info .col table .datos{
+    width: 40%;
+    border-bottom: 1px solid #bab9b9;
+}
+.experiencia .contenido .info .col table h4{
+    margin-top: 10px;
+}
+.experiencia .contenido .info .col table h3{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.experiencia .contenido .info .col table p{
+    display: block;
+    color: #c302f3;
+    margin-top: 14px;
+    font-weight: bold;
+}
+.experiencia .contenido .info .col table .descripcion{
+    border-left: 1px solid #bab9b9;
+    padding-left: 20px;
+}
+/* CONTACTO */
+.contacto{
+    background-color: #202020;
+    padding: 140px 0 100px 0;
+    color: #e6e6e6;
+    text-align: center;
+}
+.contacto .contenido{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.contacto .contenido h3{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.contacto .contenido .fila{
+    display: flex;
+    justify-content: space-around;
+}
+.contacto .contenido .fila .col{
+    margin-top: 50px;
+}
+.contacto .contenido .fila .col h2{
+    color: #c302f3;
+}
+
