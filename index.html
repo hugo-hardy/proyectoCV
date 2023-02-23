@@ -28,7 +28,7 @@
         <div class="contenido">
             <header>
                 <div class="nav-bar" onclick="showMenu()">
-                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-bars"></i>                   
                 </div>
                 <nav id="nav" class="nav">
                     <a href="#principal">Principal</a>
@@ -37,10 +37,11 @@
                     <a href="#interes">Intereses</a>
                     <a href="#contact">Contacto</a>
                 </nav>
+                
             </header>
             <div class="info">
-                <h1>Hugo Gustavo Hardy</h1>
-                <h2>Entre Ríos - Argentina</h2>
+                <h1>Paul Medina</h1>
+                <h2>paul.medina@example.com</h2>
                 <div class="redes">                    
                     <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                     <a href="#"><i class="fa-brands fa-square-instagram"></i></a>                    
@@ -48,7 +49,7 @@
                 </div>
             </div>
             <div class="foto">
-                <img src="imagenes/perfil.jpg" alt="Imagen de perfil">
+                <img id="perfil" src="imagenes/paul.jpg" alt="Imagen de perfil">
             </div>
         </div>
     </section>
@@ -190,24 +191,24 @@
         </div>
     </div>
 </section>
-     <!-- SECCION CONTACTO -->
+     <!-- SECCION CONTACTO -->      
      <section class="contacto" id="contact">
         <div class="contenido">
             <h2 class="titulo-seccion">Contacto</h2>
             <h3>Puede contactarme por los siguientes medios</h3>
-
+            <button type="submit" class="btn" onclick="abrirPopup()">Contactar</button>
             <div class="fila">
                 <div class="col">
                     <h2>
                         <i class="fa-solid fa-phone"></i> Teléfono
                     </h2>
-                    <span class="info-contacto">343 - 12345678</span>
+                    <span class="info-contacto">(403) 395-8503</span>
                 </div>
                 <div class="col">
                     <h2>
                         <i class="fa-solid fa-envelope"></i> Mail
                     </h2>
-                    <span class="info-contacto">mi.correo@gmail.com</span>
+                    <span class="info-contacto">paul.medina@example.com</span>
                 </div>
                 <div class="col">
                     <h2>
@@ -219,17 +220,18 @@
         </div>        
     </section>
     <!-- SECCION FORMULARIO DE CONTACTO -->
-    <div class="form-contacto" style="display: none;">
+    <div class="form-contacto" id="popup">
         <form class="form">
-            <p type="Nombre:"> <input placeholder="Indique su nombre" required></p>
-            <p type="Email:"> <input placeholder="Indique su email" required></p>
-            <p type="Mensaje:"> <input placeholder="Ingrese el mensaje" required></p>
-
-            <button> Enviar mensaje </button>
-
+            <p type="Nombre:"> <input placeholder="Indique su nombre" /*required*/></p>
+            <p type="Email:"> <input placeholder="Indique su email" /*required*/></p>
+            <p type="Mensaje:"> <input placeholder="Ingrese el mensaje" /*required*/></p>
+              <div class="botones">
+                <button type="button"  onclick="cerrarPopup()" style="margin-left: 30px;"> Cerrar </button>
+                <button type="submit" onclick="enviarMensaje()" style="margin-right: 30px;"> Enviar mensaje </button>
+              </div>
             <div>
-                <span class="fa fa-phone"></span> 343-12345678
-                <span class="fa fa-envelope"></span> mi.correo@gmail.com
+                <span class="fa fa-phone"></span> (403) 395-8503
+                <span class="fa fa-envelope"></span> paul.medina@example.com
             </div>
         </form>
     </div>

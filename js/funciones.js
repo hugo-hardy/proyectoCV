@@ -19,3 +19,23 @@ for(var x = 0; x <links.length;x++){
         menu_visible = false;
     }
 }
+
+let popup = document.getElementById("popup");
+function abrirPopup(){
+    popup.classList.add("abrir-popup");
+}
+
+function cerrarPopup(){
+    popup.classList.remove("abrir-popup");
+}
+
+function enviarMensaje(){               
+    sleep(1000).then(() => {     
+        alert("Gracias por contactarse");        
+        popup.classList.remove("abrir-popup");
+    });    
+}
+
+function sleep (time) {
+    return new Promise((resolve) => setTimeout(resolve, time));
+}

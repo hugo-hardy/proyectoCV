@@ -3,7 +3,19 @@
     font-family:Verdana, Geneva, Tahoma, sans-serif; 
     font-size: 3rem;
 }
-
+.btn{
+   padding: 10px 60px;
+   background: #fff;
+   border: 0;
+   outline: none;
+   cursor: pointer;
+   font-size: 22px;
+   font-weight: 500;
+   border-radius: 30px; 
+}
+#perfil{
+    width: 200px;
+}
 /* PRINCIPAL */
 .principal{    
     background-size: cover;
@@ -92,7 +104,8 @@
     position: relative;
 }
 .principal .contenido .foto img{
-    max-width: 300px;
+    max-width: 200px;
+    
     border-radius: 50%;
     border: 5px solid #666;
     position: absolute;
@@ -175,9 +188,9 @@
 }
 .experiencia .contenido .info .col .titulo{
     display: inline-block;
-    color: #c302f3;
+    color: #940253;
     font-weight: bold;
-    border: 2px solid #c302f3;
+    border: 2px solid #940253;
     padding: 10px;
 
 }
@@ -198,7 +211,7 @@
 }
 .experiencia .contenido .info .col table p{
     display: block;
-    color: #c302f3;
+    color: #940253;
     margin-top: 14px;
     font-weight: bold;
 }
@@ -278,12 +291,21 @@
     margin-top: 50px;
 }
 .contacto .contenido .fila .col h2{
-    color: #c302f3;
+    color: #940253;
 }
 /* FORMULARIO CONTACTO */
-.form-contacto{
-    background: lightblue;
+.form-contacto{    
     margin: 0;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    visibility: hidden;
+    transition: transform 0.4s,top 0.4s;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 120%;
 }
 .form-contacto .form{
     width: 340px;
@@ -353,8 +375,18 @@
     border-radius: 6px;
     font-size: 13px;
     box-shadow: 10px 1px 40px -14px #000;
+    display: flex;
+}
+.form-contacto .botones {
+    display: contents;
 }
 .form-contacto span{
     margin: 0 5px 0 15px;
 }
 
+.abrir-popup{
+   visibility: visible; 
+   position: fixed;
+   top: 50%;
+   transform: translate(-50%,-50%) scale(1);
+}
